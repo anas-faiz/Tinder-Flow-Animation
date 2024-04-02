@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent ,rgba(0, 0, 0, 0.438));
+        }
+    </style>
+    <title>tinder</title>
+
+</head>
+<body>
+    <div class="w-full h-screen bg-black">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden">
+            <div class=" maincard z-[3] absolute w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  ">
+                <img class="w-full h-full object-cover " src="" alt="">
+            </div>
+            <div class="incomingcard z-[2] absolute w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 ">
+                <img class="w-full h-full object-cover " src="" alt="">
+            </div>
+        </div>
+        <div class="absolute z-[4] top-0 left-0 w-full h-screen  flex flex-col justify-between">
+            <nav class="w-full px-5 py-6 flex items-center justify-between text-white  ">
+                <div class="prflimg w-[3.5rem] h-[3.5rem] bg-red-600 rounded-full overflow-hidden ">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <h3 class="capitalize text-xl font-semibold ">they liked you</h3>
+                <div class="chaticon w-[3.5rem] h-[3.5rem] bg-white/50 rounded-full flex items-center justify-center ">
+                    <i class="opacity-80 ri-chat-3-line"></i>
+                    <div class="badge rounded-full absolute w-5 h-5 bg-red-600 -translate-y-6 translate-x-4 flex items-center justify-center " >
+                        <h5 class="text-xs font-semibold">5</h5>
+                    </div>
+                </div>
+            </nav>
+            <div class="detailscontainer w-full">
+                <div class="details px-5 py-6 w-full ">
+                <div class="element address flex gap-5 items-center">
+                    <i class=" w-[2rem] h-[2rem] flex items-center justify-center rounded-full font-medium bg-white ri-corner-left-up-line"></i>
+                    <h3 class="text-white">USA,CALIFORNIA</h3>
+                </div>
+            <div class="element pdetails flex gap-3 mt-1 ">
+                <h1 class="name tracking-tighter uppercase text-white text-6xl font-regular">victoria</h1>
+                <h1 class="age tracking-tighter uppercase text-white text-6xl font-regular opacity-70">23</h1>
+            </div>   
+            <div class="element tags flex gap-3 text-white mt-2">
+                <div class="tag flex items-center tracking-tight bg-white/30 px-3 py-1 rounded-full">
+                    <i class="text-sm ri-music-line"></i>
+                    <h4 class="text-sm">music</h4>
+                </div>
+                
+                
+            </div> 
+            <div class="element bio text-white/80 mt-5 ">
+                <h3 class="capitalize text-xl">bio</h3>
+                <p class="text-lg mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error sint nobis cumque est delectus tenetur dolorem harum voluptatibus ipsam sapiente!</p>
+            </div>
+            <div class="element buttons flex gap-2 items-center mt-3 ">
+                <button class="reject bg-red-600 w-1/2 rounded-full py-2 ">
+                    <i class="text-xl ri-close-fill"></i>
+                </button>
+                <button class="accept bg-white w-1/2 rounded-full py-2">
+                    <i class="text-xl ri-heart-2-fill"></i>
+                </button>
+            </div>
+            </div>
+
+            </div>
+            
+
+        </div>
+       
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
